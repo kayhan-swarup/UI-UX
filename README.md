@@ -6,22 +6,21 @@
 	
 	
 # Login UI
-	• Integrate in your gradle build (app.build) :
+• Integrate in your gradle build (app.build) :
 			
-			```
-				dependencies {
-					...
-					
-					implementation 'com.github.kayhan-swarup:UI-UX:1.0.3'
-					...
-					}
+```java
+	
+	dependencies {
+		...
+
+		implementation 'com.github.kayhan-swarup:UI-UX:1.0.3'
+		...
+		}
 			
-			```
+	```
 	
-	•	And finally add the line below in the project's gradle (e.g: project-name.build):
+•And finally add the line below in the project's gradle (e.g: project-name.build):
 	
-		```
 		
 		
-		```
 		
