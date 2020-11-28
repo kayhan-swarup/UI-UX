@@ -59,8 +59,6 @@ LoginHandler.getInstance()
 		/*
 		*   Failed to log in
 		*/
-
-
 		Toast.makeText(getBaseContext(),"Login failed",Toast.LENGTH_LONG).show();
 	    }
 	}
