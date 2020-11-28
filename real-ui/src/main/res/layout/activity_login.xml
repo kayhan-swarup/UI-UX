@@ -30,7 +30,8 @@
             />
     </com.google.android.material.appbar.AppBarLayout>
     <FrameLayout
-
+        android:background="@color/color_transparent"
+        android:backgroundTint="@color/color_transparent"
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -40,12 +41,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-
+            android:background="@color/color_transparent"
+            android:backgroundTint="@color/color_transparent"
 
             >
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/color_transparent"
+                android:backgroundTint="@color/color_transparent"
                 >
                 <ImageView
                     android:id="@+id/imageView"

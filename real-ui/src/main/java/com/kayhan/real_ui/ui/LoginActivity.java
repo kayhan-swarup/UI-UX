@@ -33,6 +33,7 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import com.hbb20.CountryCodePicker;
 import com.kayhan.real_ui.R;
 import com.kayhan.real_ui.dialogs.DialogCustom;
+import com.kayhan.real_ui.handlers.LoginHandler;
 import com.kayhan.real_ui.logs.L;
 import com.kayhan.real_ui.models.MyTime;
 
@@ -287,13 +288,12 @@ public class LoginActivity extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-
+                        DialogCustom.dismissUpload();
                         if(task.isSuccessful()){
                             FirebaseUser user=task.getResult().getUser();
-
-
-
-
+                            LoginHandler.getInstance()
+                                    .getListener().onLoggedIn(user);
+                            finish();
 
                         }else{
                             DialogCustom.getStandardDialog(verificationLayout.getContext(),
@@ -377,7 +377,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == RC_SIGN_IN){
+            DialogCustom.dismissUpload();
+            if(resultCode==RESULT_OK&&FirebaseAuth.getInstance().getCurrentUser()!=null){
 
+                LoginHandler.getInstance().getListener().onLoggedIn(FirebaseAuth.getInstance().getCurrentUser());
+                finish();
+            }
         }
     }
 }
