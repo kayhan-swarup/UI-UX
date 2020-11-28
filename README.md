@@ -42,29 +42,29 @@ dependencies {
 ```java
 
 LoginHandler.getInstance()
-	    .startLogin(v.getContext(), new LoginListener() {
-		@Override
-		public void onLoggedIn(FirebaseUser firebaseUser) {
-		    if(firebaseUser!=null){
-			try {
-			    /*
-			    *   Handle after successfully logged in
-			    */
+	.startLogin(v.getContext(), new LoginListener() {
+	@Override
+	public void onLoggedIn(FirebaseUser firebaseUser) {
+	    if(firebaseUser!=null){
+		try {
+		    /*
+		    *   Handle after successfully logged in
+		    */
 
-			    Toast.makeText(getBaseContext(),"Logged in: "+firebaseUser.getPhoneNumber(),Toast.LENGTH_LONG).show();
-			} catch (Exception e) {
-			    L.e(e);
-			}
-		    }else{
-			/*
-			*   Failed to log in
-			*/
-
-
-			Toast.makeText(getBaseContext(),"Login failed",Toast.LENGTH_LONG).show();
-		    }
+		    Toast.makeText(getBaseContext(),"Logged in: "+firebaseUser.getPhoneNumber(),Toast.LENGTH_LONG).show();
+		} catch (Exception e) {
+		    L.e(e);
 		}
-	    });
+	    }else{
+		/*
+		*   Failed to log in
+		*/
+
+
+		Toast.makeText(getBaseContext(),"Login failed",Toast.LENGTH_LONG).show();
+	    }
+	}
+	});
 ```
 
 	
