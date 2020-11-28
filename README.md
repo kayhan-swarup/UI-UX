@@ -6,7 +6,7 @@
 	• OTP Login UI
 	
 	
-# Login UI
+# Gradle integration:
 • Integrate in your gradle build (app.build) :
 			
 ```
