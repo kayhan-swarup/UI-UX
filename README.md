@@ -34,7 +34,7 @@ dependencies {
 ```
 
 
-#Code Example:
+# Code Example:
 
 • If user is not logged in just copy the code below:
 
