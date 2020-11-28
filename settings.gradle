@@ -1,0 +1,3 @@
+include ':real-ui'
+include ':app'
+rootProject.name = "SampleActivity"

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Kayhan Swarup on 1/12/17 11:39 PM
+  ~ Copyright (c) 2017. All rights reserved.
+  ~
+  ~ Last modified 9/30/16 5:59 AM
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape>
+            <stroke
+                android:width="1dp"
+                android:color="@color/accentDarker" />
+            <solid android:color="#DDFFFFFF" />
+
+            <corners android:radius="3dp" />
+
+            <padding
+                android:bottom="8dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="8dp" />
+
+        </shape>
+    </item>
+
+
+    <!--<item>-->
+
+    <!--<shape>-->
+    <!--<solid-->
+    <!--android:color="@color/white"/>-->
+    <!--&lt;!&ndash;<stroke android:width="1dp" android:color=" @color/primaryDark" />&ndash;&gt;-->
+    <!--<corners android:radius="5dp" />-->
+
+    <!--<padding android:bottom="3dp" android:left="1dp" android:right="1dp"  />-->
+
+    <!--</shape>-->
+    <!--</item>-->
+    <!--<item>-->
+    <!--<shape>-->
+    <!--<solid android:color="#FEFFFFFF" />-->
+    <!--&lt;!&ndash;<stroke android:width="1dp" android:color=" @color/primaryDark" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<corners android:radius="2dp" />&ndash;&gt;-->
+    <!--<padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />-->
+
+    <!--</shape>-->
+    <!--</item>-->
+
+</layer-list>

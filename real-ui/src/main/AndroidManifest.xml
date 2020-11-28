@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kayhan.real_ui">
+
+    <application android:logo="@drawable/ccp_ic_arrow_drop_down"
+
+
+        >
+        <activity android:name=".ui.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            ></activity>
+    </application>
+
+</manifest>
