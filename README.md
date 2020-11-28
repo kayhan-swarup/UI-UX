@@ -69,7 +69,9 @@ LoginHandler.getInstance()
 
 # Example screens:
 
-<img src="https://user-images.githubusercontent.com/7688524/100517792-867c4780-31b7-11eb-9ffe-af3c2be0a10d.png" />
+<img src="images/otp_input_phone.png" />
+
+<img src="images/otp_verify_2.png" />
 	
 
 		
